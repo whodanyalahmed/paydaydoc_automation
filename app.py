@@ -68,7 +68,7 @@ while True:
     try:
         inputs = driver.find_elements_by_css_selector("input.form-control")
 
-        d = ["email","password"]
+        d = ["KHI3873","2urbawrd"]
         inputs[0].send_keys(d[0])
         inputs[1].send_keys(d[1])
 
@@ -144,19 +144,40 @@ Currency = df['Currency'].tolist()
 year_exp = df['Yearly Expense'].tolist()
 
 
-
-
-
-
-
-
-# i = 0
-# while i<len(form_num)-1:
-#     driver.find_element_by_id("Form Number").send_keys(form_num[i])
-#     driver.find_element_by_id("Company Code").send_keys(com_code[i])
-#     driver.find_element_by_id("Company Name").send_keys(com_name[i])
-#     asking()
-#     i += 1
+i = 0
+while i<len(form_num)-1:
+    driver.find_element_by_id("Form Number").send_keys(form_num[i])
+    driver.find_element_by_id("Company Code").send_keys(com_code[i])
+    driver.find_element_by_id("Company Name").send_keys(com_name[i])
+    driver.find_element_by_id("Company Address").send_keys(com_add[i])
+    driver.find_element_by_id("Zip Code").send_keys(zip_code[i])
+    driver.find_element_by_id("Fax").send_keys(fax[i])
+    driver.find_element_by_id("Website").website(web[i])
+    driver.find_element_by_id("Email").send_keys(email[i])
+    driver.find_element_by_id("Contact").send_keys(contact[i])
+    driver.find_element_by_id("State").send_keys(state[i])
+    driver.find_element_by_id("Country").send_keys(country[i])
+    driver.find_element_by_id("Head Quarter").send_keys(head_qua[i])
+    driver.find_element_by_id("Number of Employees").send_keys(num_of_emp[i])
+    driver.find_element_by_id("Industry").send_keys(ind[i])
+    driver.find_element_by_id("Brand Ambassador").send_keys(brand_amb[i])
+    driver.find_element_by_id("Media Partner").send_keys(med_part[i])
+    driver.find_element_by_id("Social Media").send_keys(soc_med[i])
+    driver.find_element_by_id("Franchise Partner").send_keys(fra_part[i])
+    driver.find_element_by_id("Investor").send_keys(inv[i])
+    driver.find_element_by_id("Advertising Media").send_keys(ad_med[i])
+    driver.find_element_by_id("Product").send_keys(product[i])
+    driver.find_element_by_id("Services").send_keys(services[i])
+    driver.find_element_by_id("Manager").send_keys(manager[i])
+    driver.find_element_by_id("Sub Classification").send_keys(sub_class[i])
+    driver.find_element_by_id("Registration date").send_keys(reg_date[i])
+    driver.find_element_by_id("Yearly Revenue").send_keys(year_rev[i])
+    driver.find_element_by_id("Land Mark").send_keys(land_mark[i])
+    driver.find_element_by_id("Account Audit").send_keys(acc_aud[i])
+    driver.find_element_by_id("Currency").send_keys(currency[i])
+    driver.find_element_by_id("Yearly Expense").send_keys(year_exp[i])
+    asking()
+    i += 1
 
 
 print("success : complete")
