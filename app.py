@@ -68,7 +68,7 @@ while True:
     try:
         inputs = driver.find_elements_by_css_selector("input.form-control")
 
-        d = ["KHI3873","2urbawrd"]
+        d = ["user","pass"]
         inputs[0].send_keys(d[0])
         inputs[1].send_keys(d[1])
 
