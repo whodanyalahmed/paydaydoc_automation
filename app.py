@@ -68,7 +68,7 @@ while True:
     try:
         inputs = driver.find_elements_by_css_selector("input.form-control")
 
-        d = ["user  ","pass"]
+        d = ["user","pass"]
         inputs[0].send_keys(d[0])
         inputs[1].send_keys(d[1])
 
@@ -169,7 +169,7 @@ while i<len(form_num)-1:
     driver.find_element_by_id("Product").send_keys("<R><B>"+product[i])
     driver.find_element_by_id("Services").send_keys(services[i])
     driver.find_element_by_id("Manager").send_keys("<B>"+manager[i]+"<B>")
-    driver.find_element_by_id("Sub Classification").send_keys("<I><U>"+sub_class[i]+"<U><I>"+)
+    driver.find_element_by_id("Sub Classification").send_keys("<I><U>"+sub_class[i]+"<U><I>")
     driver.find_element_by_id("Registration date").send_keys(reg_date[i])
     driver.find_element_by_id("Yearly Revenue").send_keys(year_rev[i])
     driver.find_element_by_id("Land Mark").send_keys(land_mark[i])
